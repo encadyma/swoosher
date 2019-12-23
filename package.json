@@ -19,7 +19,7 @@
   "license": "MIT",
   "dependencies": {
     "@types/lodash": "^4.14.106",
-    "lodash": "^4.17.10",
+    "lodash": "^4.17.13",
     "moment": "^2.22.0",
     "vue": "^2.5.16",
     "vue-router": "^3.0.1",
@@ -44,6 +44,6 @@
     "web-ext-types": "kelseasy/web-ext-types",
     "webpack": "^4.4.1",
     "webpack-cli": "^3.0.8",
-    "webpack-dev-server": "^3.1.4"
+    "webpack-dev-server": "^3.1.11"
   }
 }
