@@ -1,5 +1,5 @@
-# Chronos
-> A productive tab manager doubling as a website blocker. Let online work flow like time.
+# Tab Cleaner
+> A tab cleaning WebExtension (works on Firefox and Chrome-based browsers).
 
 ### Building
-Please see `dist/README.md` for more information on how to build Chronos.
+Please see `dist/README.md` for more information on how to build this web extension.
