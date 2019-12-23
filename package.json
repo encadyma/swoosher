@@ -44,6 +44,6 @@
     "web-ext-types": "kelseasy/web-ext-types",
     "webpack": "^4.4.1",
     "webpack-cli": "^3.0.8",
-    "webpack-dev-server": "^3.1.4"
+    "webpack-dev-server": "^3.1.11"
   }
 }
