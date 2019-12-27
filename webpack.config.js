@@ -8,14 +8,6 @@ const { VueLoaderPlugin } = require('vue-loader')
 // Inspired by vue-devtools build process
 // https://github.com/vuejs/vue-devtools/blob/master/shells/createConfig.js
 
-const bubleOptions = {
-  objectAssign: 'Object.assign',
-  transforms: {
-    forOf: false,
-    modules: false
-  }
-}
-
 let config = {
   entry: {
     popup: './src/popup/popup.js',
@@ -36,19 +28,12 @@ let config = {
   module: {
     rules: [
       {
-        test: /\.js$/, 
-        loader: 'buble-loader',
-        exclude: /node_modules/,
-        options: bubleOptions
-      },
-      {
         test: /\.vue$/, 
         loader: 'vue-loader',
         options: {
           compilerOptions: {
             preserveWhitespace: false
           },
-          transpileOptions: bubleOptions
         } 
       },
       { test: /\.css$/, use: ['vue-style-loader', 'css-loader'] },
