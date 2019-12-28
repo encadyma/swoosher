@@ -10,9 +10,9 @@ browser.tabs.onRemoved.addListener(Handlers.updateTabCountOnRemoval)
 
 // Filtering handlers
 Blocker.assembleBlockedSites().then(() => {
-  console.log("[chronos] Loaded blocked sites.")
-  browser.tabs.onUpdated.addListener(Blocker.handleTabUpdate.bind(Blocker))
-  browser.storage.onChanged.addListener(Blocker.handleStorageChange.bind(Blocker))
+    console.log("[chronos] Loaded blocked sites.")
+    browser.tabs.onUpdated.addListener(Blocker.handleTabUpdate.bind(Blocker))
+    browser.storage.onChanged.addListener(Blocker.handleStorageChange.bind(Blocker))
 })
 
 // Initiation Code

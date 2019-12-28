@@ -1,306 +1,306 @@
 .text-sub {
-  color: #666;
+    color: #666;
 }
 
 .text-sub_dimmer {
-  color: #999;
+    color: #999;
 }
 
 .cursor-blocked {
-  cursor: not-allowed !important;
+    cursor: not-allowed !important;
 }
 
 .tab-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  cursor: default;
-  padding: 6px 16px;
-  margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: default;
+    padding: 6px 16px;
+    margin: 0;
 }
 
 .tab-item:hover {
-  background-color: rgba(100, 100, 100, 0.1);
+    background-color: rgba(100, 100, 100, 0.1);
 }
 
 .tab-item:active {
-  background-color: rgba(100, 100, 100, 0.18);
+    background-color: rgba(100, 100, 100, 0.18);
 }
 
 .tab-item.cursor-blocked {
-  background-color: rgba(100, 100, 100, 0.05) !important;
-  color: #666;
+    background-color: rgba(100, 100, 100, 0.05) !important;
+    color: #666;
 }
 
 .tab-item_active {
-  color: rgb(55, 135, 255);
+    color: rgb(55, 135, 255);
 }
 
 .tab-item_active_full {
-  background-color: rgba(55, 135, 255, 0.1) !important;
-  color: rgb(55, 135, 255);
+    background-color: rgba(55, 135, 255, 0.1) !important;
+    color: rgb(55, 135, 255);
 }
 
 .tab-item_selected {
-  color: rgb(220, 120, 50);
+    color: rgb(220, 120, 50);
 }
 
 .tab-item_selected_full {
-  background-color: rgba(255, 135, 55, 0.1) !important;
-  color: rgb(220, 120, 50);
+    background-color: rgba(255, 135, 55, 0.1) !important;
+    color: rgb(220, 120, 50);
 }
 
 .tab-item_selected_blinking {
-  background-color: rgba(255, 135, 55, 0.1);
-  color: rgb(220, 120, 50);
-  cursor: pointer;
+    background-color: rgba(255, 135, 55, 0.1);
+    color: rgb(220, 120, 50);
+    cursor: pointer;
 }
 
 .tab-item_selected_blinking:hover {
-  background-color: rgba(255, 135, 55, .15);
+    background-color: rgba(255, 135, 55, .15);
 }
 
 .tab-item_selected_blinking.cursor-blocked {
-  background-color: rgba(100, 100, 100, 0.05);
+    background-color: rgba(100, 100, 100, 0.05);
 }
 
 @keyframes tab_confirmation {
-  from {
-    background-color: rgb(166, 206, 168);
-  }
-  10% {
-    background-color: rgb(148, 207, 151);
-  }
-  40% {
-    background-color: transparent;
-  }
-  50% {
-    background-color: rgb(148, 207, 151);
-  }
-  to {
-    background-color: transparent;
-  }
+    from {
+        background-color: rgb(166, 206, 168);
+    }
+    10% {
+        background-color: rgb(148, 207, 151);
+    }
+    40% {
+        background-color: transparent;
+    }
+    50% {
+        background-color: rgb(148, 207, 151);
+    }
+    to {
+        background-color: transparent;
+    }
 }
 
 .tab-item_confirmed {
-  animation: tab_confirmation 800ms ease;
+    animation: tab_confirmation 800ms ease;
 }
 
 .tab-item-inner * {
-  vertical-align: middle;
+    vertical-align: middle;
 }
 
 .tab-item__favicon {
-  font-size: 20px;
-  height: 20px;
-  margin-right: 8px;
+    font-size: 20px;
+    height: 20px;
+    margin-right: 8px;
 }
 
 .popup-icon-btn {
-  color: #666;
-  font-size: 18px;
-  padding: 2px;
-  border-radius: 2px;
+    color: #666;
+    font-size: 18px;
+    padding: 2px;
+    border-radius: 2px;
 }
 
 .popup-icon-btn:hover {
-  background-color: rgba(100, 100, 100, 0.1);
+    background-color: rgba(100, 100, 100, 0.1);
 }
 
 .tab-item .popup-icon-btn,
 .popup-icon-btn.removed {
-  visibility: hidden;
+    visibility: hidden;
 }
 
 .tab-item:hover .popup-icon-btn {
-  visibility: visible;
+    visibility: visible;
 }
 
 .tabs-options {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 10px;
-  padding: 4px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    padding: 4px 10px;
 }
 
 .tabs-options__menu {
-  display: flex;
-  flex-direction: row;
+    display: flex;
+    flex-direction: row;
 }
 
 .tabs-options__menu__profile,
 .tabs-options__menu__bubble_helptext {
-  font-size: 11px;
-  border-radius: 4px;
-  color: #333;
-  text-align: center;
-  padding: 5px 10px;
-  min-width: 160px;
+    font-size: 11px;
+    border-radius: 4px;
+    color: #333;
+    text-align: center;
+    padding: 5px 10px;
+    min-width: 160px;
 }
 
 .tabs-options__menu__profile:hover {
-  background-color: rgba(100, 100, 100, 0.05);
+    background-color: rgba(100, 100, 100, 0.05);
 }
 
 .tabs-options__menu__profile:active {
-  background-color: rgba(100, 100, 100, 0.10);
+    background-color: rgba(100, 100, 100, 0.10);
 }
 
 .tabs-options__menu__profile_blue {
-  background-color: rgb(55, 135, 255);
-  color: #fff;
+    background-color: rgb(55, 135, 255);
+    color: #fff;
 }
 
 .tabs-options__menu__profile_blue:hover {
-  background-color: rgb(50, 125, 235);
+    background-color: rgb(50, 125, 235);
 }
 
 .tabs-options__menu__profile_blue:active {
-  background-color: rgb(45, 115, 215);
+    background-color: rgb(45, 115, 215);
 }
 
 .tabs-options__item {
-  color: rgba(0, 0, 0, 0.6);
-  margin: 0 2px;
+    color: rgba(0, 0, 0, 0.6);
+    margin: 0 2px;
 }
 
 .tabs-options__item:hover {
-  color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.8);
 }
 
 .tabs-options__item:active {
-  color: rgba(0, 0, 0, 1);
+    color: rgba(0, 0, 0, 1);
 }
 
 .tabs-options__item .material-icons {
-  font-size: 24px;
-  vertical-align: middle;
+    font-size: 24px;
+    vertical-align: middle;
 }
 
 .tabs-options__item .tabs-options__item__helper {
-  font-size: 12px;
+    font-size: 12px;
 }
 
 .tabs-options__item_highlighted_red {
-  color: rgb(220, 30, 30);
+    color: rgb(220, 30, 30);
 }
 
 .tabs-options__item_highlighted_red:hover {
-  color: rgb(185, 25, 25);
+    color: rgb(185, 25, 25);
 }
 
 .tabs-options__item_highlighted_red:active {
-  color: rgb(135, 20, 20);
+    color: rgb(135, 20, 20);
 }
 
 .tabs-options__item_highlighted_blue {
-  color: rgb(55, 135, 255);
+    color: rgb(55, 135, 255);
 }
 
 .tabs-options__item_highlighted_blue:hover {
-  color: rgb(45, 115, 215);
+    color: rgb(45, 115, 215);
 }
 
 .tabs-options__item_highlighted_blue:active {
-  color: rgb(25, 75, 175);
+    color: rgb(25, 75, 175);
 }
 
 @keyframes tabs_options_item_popout {
-  0% { transform: scale(1.0); }
-  50% { transform: scale(1.28); }
-  100% { transform: scale(1); }
+    0% { transform: scale(1.0); }
+    50% { transform: scale(1.28); }
+    100% { transform: scale(1); }
 }
 
 .tabs-options__item_popout {
-  color: rgb(220, 120, 50) !important;
-  animation: tabs_options_item_popout 400ms cubic-bezier(.34,-0.44,.51,1.45);
+    color: rgb(220, 120, 50) !important;
+    animation: tabs_options_item_popout 400ms cubic-bezier(.34,-0.44,.51,1.45);
 }
 
 .input-text {
-  background-color: #fdfdfd;
-  box-shadow: 0 2px 8px rgba(100, 100, 100, 0.1);
-  border-radius: 2px;
-  overflow: hidden;
-  transition: 150ms ease;
+    background-color: #fdfdfd;
+    box-shadow: 0 2px 8px rgba(100, 100, 100, 0.1);
+    border-radius: 2px;
+    overflow: hidden;
+    transition: 150ms ease;
 }
 
 .input-text input,
 .input-text_bare input {
-  background: transparent;
-  border: none;
-  font-size: 14px;
-  padding: 8px 12px;
-  min-width: 300px;
+    background: transparent;
+    border: none;
+    font-size: 14px;
+    padding: 8px 12px;
+    min-width: 300px;
 }
 
 .input-text input {
-  border: 4px solid #fdfdfd;
-  padding: 10px 18px;
-  transition: 60ms ease;
+    border: 4px solid #fdfdfd;
+    padding: 10px 18px;
+    transition: 60ms ease;
 }
 
 .input-text input:focus {
-  border-color: rgb(55, 135, 255);
+    border-color: rgb(55, 135, 255);
 }
 
 .button {
-  background-color: rgb(55, 135, 255);
-  border: none;
-  border-radius: 2px;
-  outline: none;
-  color: #fff;
-  font-size: 14px;
-  padding: 12px 20px;
-  min-width: 140px;
+    background-color: rgb(55, 135, 255);
+    border: none;
+    border-radius: 2px;
+    outline: none;
+    color: #fff;
+    font-size: 14px;
+    padding: 12px 20px;
+    min-width: 140px;
 }
 
 .button:hover {
-  background-color: rgb(50, 125, 235);
+    background-color: rgb(50, 125, 235);
 }
 
 .button:active {
-  background-color: rgb(45, 115, 215);
+    background-color: rgb(45, 115, 215);
 }
 
 .button.disabled {
-  background-color: rgb(100, 100, 100);
+    background-color: rgb(100, 100, 100);
 }
 
 .button.button-default {
-  background-color: rgba(12, 12, 13, 0.1);
-  color: #0c0c0d;
+    background-color: rgba(12, 12, 13, 0.1);
+    color: #0c0c0d;
 }
 
 .button.button-default:hover {
-  background-color: rgba(12, 12, 13, 0.2);
+    background-color: rgba(12, 12, 13, 0.2);
 }
 
 .button.button-default:hover {
-  background-color: rgba(12, 12, 13, 0.3);
+    background-color: rgba(12, 12, 13, 0.3);
 }
 
 .tabs-expandable__input {
-  background-color: rgba(0, 0, 0, 0.4);
-  color: #fdfdfd;
-  width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fdfdfd;
+    width: 100%;
 }
 
 .tabs-expandable__input_integrated {
-  background-color: rgba(100, 100, 100, 0.4);
+    background-color: rgba(100, 100, 100, 0.4);
 }
 
 .tabs-expandable__input_orange {
-  background-color: rgb(201, 113, 50);
+    background-color: rgb(201, 113, 50);
 }
 
 .tabs-expandable__input input {
-  background-color: transparent;
-  box-sizing: border-box;
-  color: #fdfdfd;
-  font-size: 14px;
-  padding: 10px 20px;
-  width: 100%;
-  border: 0;
+    background-color: transparent;
+    box-sizing: border-box;
+    color: #fdfdfd;
+    font-size: 14px;
+    padding: 10px 20px;
+    width: 100%;
+    border: 0;
 }

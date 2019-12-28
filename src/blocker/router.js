@@ -6,9 +6,9 @@ import BlockPage from './BlockPage'
 Vue.use(VueRouter)
 
 export default new VueRouter({
-  mode: 'hash',
-  routes: [
-    { path: '/block', name: 'BlockPage', component: BlockPage },
-    { path: '**', redirect: '/block' }
-  ]
+    mode: 'hash',
+    routes: [
+        { path: '/block', name: 'BlockPage', component: BlockPage },
+        { path: '**', redirect: '/block' }
+    ]
 })

@@ -1,22 +1,21 @@
 <template>
-  <div>
+<div>
     <tab-header/>
     <router-view/>
-  </div>
+</div>
 </template>
 
 <script>
-  import '../fonts/material.css'
-  import '../reset.css'
-  import '../chronos.css'
+import '../fonts/material.css'
+import '../reset.css'
+import '../chronos.css'
 
-  import TabHeader from './components/TabHeader'
+import TabHeader from './components/TabHeader'
 
-  export default {
+export default {
     components: { TabHeader }
-  }
+}
 </script>
 
 <style scoped>
-
 </style>
