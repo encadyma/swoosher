@@ -6,7 +6,7 @@
     <div class="blocker-page-actions">
         <a class="blocker-second-action" :href="optionsLink">Go to options</a>
         <span class="blocker-plugin-spacer">&bull;</span>
-        <span class="text-sub blocker-plugin-version">Chronos {{version}}</span>
+        <span class="text-sub blocker-plugin-version">Swoosher {{version}}</span>
     </div>
 </div>
 </template>

@@ -1,7 +1,7 @@
 <template>
 <div>
-    <h1>Welcome to Chronos!</h1>
-    <p>Thank you for installing Chronos. Chronos is a tabs extension that can help you spend time productively on the web. <b>Here are some cool tips to know to make your experience even better:</b></p>
+    <h1>Welcome to Swoosher!</h1>
+    <p>Thank you for installing Swoosher. Swoosher is a tabs extension that can help you spend time productively on the web. <b>Here are some cool tips to know to make your experience even better:</b></p>
     <div class="options-quick-start-panel" v-for="topic in helpTopics" :key="topic.id">
         <div class="options-quick-start-panel-heading" @click="toggleTopicClick(topic.id)" :class="{ selected: selectedTopic === topic.id }">
             <i class="material-icons" v-if="selectedTopic === topic.id">remove_circle</i>

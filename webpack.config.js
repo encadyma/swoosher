@@ -67,21 +67,21 @@ let config = {
     }),
     new HtmlWebpackPlugin({
       name: 'popup',
-      title: 'Popup - Chronos',
+      title: 'Popup - Swoosher',
       filename: 'popup/popup.html',
       template: 'src/template.html',
       chunks: ['popup']
     }),
     new HtmlWebpackPlugin({
       name: 'options',
-      title: 'Options - Chronos',
+      title: 'Options - Swoosher',
       filename: 'options/options.html',
       template: 'src/template.html',
       chunks: ['options']
     }),
     new HtmlWebpackPlugin({
       name: 'blocker',
-      title: 'Blocked Page - Chronos',
+      title: 'Blocked Page - Swoosher',
       filename: 'blocker/blocker.html',
       template: 'src/template.html',
       chunks: ['blocker']

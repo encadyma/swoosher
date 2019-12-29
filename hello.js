@@ -3,7 +3,7 @@
  */
 
 // console.log("Hello there!");
-// console.log("Thank you for visiting the Chronos project!");
+// console.log("Thank you for visiting the Chronos/Swoosher project!");
 // console.log("This is a program that simply states hello.");
 // console.log();
 // console.log("If this was what you were looking for, then congratulations!");
@@ -15,6 +15,6 @@
 // console.log("You might be looking for the extension's source code instead,");
 // console.log("which can be found in `./src/`.");
 // console.log();
-// console.log("Thank you for your interest in Chronos!");
+// console.log("Thank you for your interest in Chronos/Swoosher!");
 
-console.log("[chronos] Hello! Chronos has loaded.")
+console.log("[chronos] Hello! Chronos (Tab Swoosher) has loaded.")

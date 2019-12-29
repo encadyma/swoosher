@@ -1,7 +1,7 @@
 <template>
 <div id="home">
     <h1>Options</h1>
-    <p>This browser is running Chronos {{version}}.</p>
+    <p>This browser is running Swoosher {{version}}.</p>
     <br>
     <h3>Quick Actions: I want to...</h3>
     <!--<quick-action title="View all tabs" description="View tabs across windows" pageName="TabsPage"/>-->
@@ -9,8 +9,8 @@
     <quick-action title="See all profiles" description="View and manage all created profiles" pageName="ProfilesPage"/>
     <quick-action title="Block off sites" description="Create a profile based on a list of websites to block" pageName="AddProfile"/>
     <!--<quick-action title="Edit current profile" description="Edit the current profile's site lists, blocking mode, and more" pageName="ViewProfile" :params="{ id: currentProfile }"/>-->
-    <quick-action title="Find help" description="Open the Chronos quickstart with walkthroughs on common actions" pageName="QuickStart"/>
-    <quick-action title="Request a feature" description="Open the Github issue tracker for Chronos (sign-up required)" pageName="HomePage" @click.native="goToGithub"/>
+    <quick-action title="Find help" description="Open the Swoosher quickstart with walkthroughs on common actions" pageName="QuickStart"/>
+    <quick-action title="Request a feature" description="Open the Github issue tracker for Swoosher (sign-up required)" pageName="HomePage" @click.native="goToGithub"/>
 </div>
 </template>
 
@@ -27,7 +27,7 @@ export default {
     },
     methods: {
         goToGithub() {
-            browser.tabs.create({url: "https://github.com/encadyma/chronos/issues"})
+            browser.tabs.create({url: "https://github.com/encadyma/tab-cleaner/issues"})
         }
     }
 }
