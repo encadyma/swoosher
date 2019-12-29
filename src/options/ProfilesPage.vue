@@ -1,40 +1,40 @@
 <template>
-  <div>
+<div>
     <h1>Profiles</h1>
     <div class="profiles-grid">
-      <profile-item v-for="profile in profiles" :key="profile.id" :profile="profile" @click="goToProfile(profile.id)"/>
+        <profile-item v-for="profile in profiles" :key="profile.id" :profile="profile" @click="goToProfile(profile.id)"/>
     </div>
-  </div>
+</div>
 </template>
 
 <script>
-  import ProfileItem from './components/ProfileItem'
-  import browser from 'webextension-polyfill'
+import ProfileItem from './components/ProfileItem'
+import browser from 'webextension-polyfill'
 
-  export default {
+export default {
     components: { ProfileItem },
     data() {
-      return {
-        profiles: []
-      }
+        return {
+            profiles: []
+        }
     },
     mounted() {
-      browser.storage.local.get("profiles")
-        .then((store) => this.profiles = store.profiles.filter(i => !i.isDeleted))
+        browser.storage.local.get("profiles")
+            .then((store) => this.profiles = store.profiles.filter(i => !i.isDeleted))
     },
     methods: {
-      goToProfile(profileId) {
-        this.$router.push({ name: 'ViewProfile', params: { id: profileId }})
-      }
+        goToProfile(profileId) {
+            this.$router.push({ name: 'ViewProfile', params: { id: profileId }})
+        }
     },
-  }
+}
 </script>
 
 <style scoped>
 .profiles-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 240px);
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 240px);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
 }
 </style>

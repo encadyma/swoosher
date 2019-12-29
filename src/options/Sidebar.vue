@@ -1,5 +1,5 @@
 <template>
-  <div id="options-sidebar">
+<div id="options-sidebar">
     <sidebar-item title="Home" icon="home" page="/"/>
     <!--<sidebar-item title="Tabs" icon="tab" page="TabsPage"/>-->
     <!--<sidebar-item title="States" icon="archive" page="StatesPage"/>-->
@@ -11,50 +11,50 @@
     <div class="separator-opt"></div>
     <div class="text-sub options-sidebar__heading">Help</div>
     <sidebar-item title="Quickstart" icon="help" page="/help/quickstart"/>
-  </div>
+</div>
 </template>
 
 <script>
-  import SidebarItem from './components/SidebarItem'
-  import browser from 'webextension-polyfill'
+import SidebarItem from './components/SidebarItem'
+import browser from 'webextension-polyfill'
 
-  export default {
+export default {
     components: { SidebarItem },
     data() {
-      return {
-        profiles: []
-      }
+        return {
+            profiles: []
+        }
     },
     methods: {
-      getProfiles() {
-        browser.storage.local.get("profiles").then((state) => {
-          this.profiles = state.profiles.filter(i => !i.isDeleted)
-        })
-      }
+        getProfiles() {
+            browser.storage.local.get("profiles").then((state) => {
+            this.profiles = state.profiles.filter(i => !i.isDeleted)
+            })
+        }
     },
     mounted() {
-      this.getProfiles()
-      browser.storage.onChanged.addListener((changes, areaName) => {
-        if (changes.profiles) this.getProfiles()
-      })
+        this.getProfiles()
+        browser.storage.onChanged.addListener((changes, areaName) => {
+            if (changes.profiles) this.getProfiles()
+        })
     }
-  }
+}
 </script>
 
 <style scoped>
 #options-sidebar {
-  min-width: 200px;
-  margin-right: 40px;
+    min-width: 200px;
+    margin-right: 40px;
 }
 
 .separator-opt {
-  width: 100%;
-  border-bottom: 1px solid #ccc;
-  margin: 10px auto;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    margin: 10px auto;
 }
 
 .options-sidebar__heading {
-  font-size: 14px;
-  margin: 6px 10px;
+    font-size: 14px;
+    margin: 6px 10px;
 }
 </style>
