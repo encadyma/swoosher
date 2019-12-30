@@ -24,7 +24,7 @@ export default {
             return browser.extension.getURL('/options/options.html')
         },
         version() {
-            return browser.runtime.getManifest().version
+            return browser.runtime.getManifest().version_name
         },
         websiteName() {
             if (!this.$route.query.hostname) return 'This website'

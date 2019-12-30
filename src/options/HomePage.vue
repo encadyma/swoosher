@@ -22,7 +22,7 @@ export default {
     components: { QuickAction },
     computed: {
         version() {
-            return browser.runtime.getManifest().version
+            return browser.runtime.getManifest().version_name
         }
     },
     methods: {

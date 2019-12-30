@@ -1,7 +1,8 @@
 {
     "manifest_version": 2,
     "name": "Tab Swoosher",
-    "version": "1.1.3",
+    "version": "0.1.0001",
+    "version_name": "rebuild-beta 0.1",
     "author": "encadyma",
     "description": "A simple tab cleaner WebExtension. Quickly keep your browser space clean.",
     
