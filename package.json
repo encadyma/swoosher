@@ -19,7 +19,7 @@
   "license": "MIT",
   "dependencies": {
     "@types/lodash": "^4.14.106",
-    "lodash": "^4.17.13",
+    "lodash": "^4.17.21",
     "moment": "^2.22.0",
     "vue": "^2.5.16",
     "vue-router": "^3.0.1",
