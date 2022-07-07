@@ -20,7 +20,7 @@
   "dependencies": {
     "@types/lodash": "^4.14.106",
     "lodash": "^4.17.13",
-    "moment": "^2.22.0",
+    "moment": "^2.29.4",
     "vue": "^2.5.16",
     "vue-router": "^3.0.1",
     "vuedraggable": "^2.16.0",
